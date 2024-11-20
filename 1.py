@@ -1,5 +1,9 @@
 import rospy
 from std_msgs.msg import String
+from sensor_msgs.msg import Odometry
+from sensor_msgs.msg import Imu
+from sensor_msgs.msg import LaserScan
+from sensor_msgs.msg import MagneticField
 def odometry_callback(data):
     rospy.loginfo("Received Odometry message: %s",data)
 def imu_callback(data):
